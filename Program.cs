@@ -111,3 +111,8 @@
 // {
 //     Console.WriteLine("What does the fox say?");
 // }
+
+
+int[] so = {7,7,5,34};
+bool result = so.Contains(34);
+Console.WriteLine(result);
