@@ -1,3 +1,24 @@
+<<<<<<< HEAD
+using Avalonia;
+using System;
+
+namespace CopyUserAction;
+
+class Program
+{
+    // Initialization code. Don't use any Visual, System.Drawing or dotnet libraries from here, as it will break.
+    [STAThread]
+    public static void Main(string[] args) => BuildAvaloniaApp()
+        .StartWithClassicDesktopLifetime(args);
+
+    // Avalonia configuration, don't remove; also used by visual designer.
+    public static AppBuilder BuildAvaloniaApp()
+        => AppBuilder.Configure<App>()
+            .UsePlatformDetect()
+            .WithInterFont()
+            .LogToTrace();
+}
+=======
 ﻿// string[] fraudulentOrderIDs = new string[3];
 
 // fraudulentOrderIDs[0] = "A123";
@@ -116,3 +137,4 @@
 int[] so = {7,7,5,34};
 bool result = so.Contains(34);
 Console.WriteLine(result);
+>>>>>>> dd0b25c6617ebeea8a368dfdac26886db40acd61
